@@ -59,7 +59,7 @@ This is a web application designed for rehabilitation clinics and medical office
 
 Located in the `/docs` folder or project Wiki.
 
-- Architecture (C4 Model)
+- [Architecture](./docs/architecture.md) (C4 Model)
 - API Documentation (Swagger / Postman / Redoc)
 - Database schema (ERD)
 - CI/CD setup and deployment guide
