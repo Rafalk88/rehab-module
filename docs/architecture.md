@@ -73,8 +73,3 @@ The Rehabilitacja Web App is a browser-based system for managing rehabilitation 
 
 - Optional external AI service for advanced analysis (reports, summaries)
 - Microservices split if project scales beyond monorepo
-
-## 7. Future Notes
-
-- Optional external AI service for advanced analysis (reports, summaries)
-- Microservices split if project scales beyond monorepo
