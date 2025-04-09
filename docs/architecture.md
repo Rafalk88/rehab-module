@@ -34,7 +34,8 @@ The Rehabilitacja Web App is a browser-based system for managing rehabilitation 
 - `SpeechToText` – AI dictation module using Web APIs
 
 ### Backend
-- `auth.ts` – login, register, JWT
+- `auth.ts` – login, JWT auth
+- `admin/users.ts` – endpoints for admin-only user creation & management
 - `appointments.ts` – scheduling logic
 - `notifications.ts` – email/SMS triggers
 - `ai.ts` – handles dictation parsing, formatting
