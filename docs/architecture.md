@@ -13,14 +13,13 @@ The Rehabilitacja Web App is a browser-based system for managing rehabilitation 
 
 ## 2. Container Diagram (C4 – Level 2)
 
-[Browser (Next.js Frontend)] | v [API (Next.js API Routes / Express)] ---> [PostgreSQL Database (Prisma)] | v [AI Speech Module (Browser-based Worker / Web Speech API)] | v [Web Push, Email (Nodemailer), SMS (Twilio)]
-
+[Browser (Next.js Frontend)] | v [API (Next.js API Routes / Express)] ---> [PostgreSQL Database (Prisma)] | v [AI Speech Module (Web Speech API)] | v [Notifications (Web Push, Nodemailer, Twilio SMS)]
 
 ### Description:
 - **Frontend:** Built in Next.js, supports role-based views and dynamic forms.
 - **Backend/API:** Next.js API Routes or Express endpoints handle logic, auth, notifications.
 - **Database:** PostgreSQL using Prisma ORM to manage data models and migrations.
-- **AI Module:** Local browser-based AI using Web Workers + Speech API for dictation.
+- **AI Module:** Local browser-based AI using Web Speech API for dictation.
 - **Notifications:** In-app (Web Push), email via Nodemailer, SMS via Twilio.
 
 ---
@@ -31,14 +30,14 @@ The Rehabilitacja Web App is a browser-based system for managing rehabilitation 
 - `AuthProvider` – session and JWT role management
 - `Dashboard` – per-role interfaces
 - `Scheduler` – calendar view with appointment logic
-- `SpeechToText` – AI dictation module using Web APIs
+- `SpeechToText` – AI dictation module using Web Speech API
 
 ### Backend
 - `auth.ts` – login, JWT auth
 - `admin/users.ts` – endpoints for admin-only user creation & management
 - `appointments.ts` – scheduling logic
 - `notifications.ts` – email/SMS triggers
-- `ai.ts` – handles dictation parsing, formatting
+- `ai.ts` – handles speech-to-text processing using Web Speech API
 - `db.ts` – Prisma client and queries
 
 ---
@@ -55,7 +54,7 @@ The Rehabilitacja Web App is a browser-based system for managing rehabilitation 
 ## 5. Error Monitoring
 
 - **Frontend:** React Error Boundaries catch UI crashes
-- **Monitoring:** Sentry for full-stack tracing
+- **Monitoring:** Sentry or LogRocket for full-stack tracing
 - **Logging:** Server logs for backend events and errors
 
 ---
@@ -65,10 +64,15 @@ The Rehabilitacja Web App is a browser-based system for managing rehabilitation 
 - JWT + RBAC (Role-Based Access Control)
 - Environment secrets managed via `.env` and Vercel Secrets
 - CSRF protection (Next.js default + HTTP-only cookies)
-- Input validation (Zod)
+- Input validation (Zod or custom validators)
 - GDPR-ready data handling
 
 ---
+
+## 7. Future Notes
+
+- Optional external AI service for advanced analysis (reports, summaries)
+- Microservices split if project scales beyond monorepo
 
 ## 7. Future Notes
 
