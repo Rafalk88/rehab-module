@@ -54,7 +54,7 @@ The Rehabilitacja Web App is a browser-based system for managing rehabilitation 
 ## 5. Error Monitoring
 
 - **Frontend:** React Error Boundaries catch UI crashes
-- **Monitoring:** Sentry or LogRocket for full-stack tracing
+- **Monitoring:** Sentry for full-stack tracing
 - **Logging:** Server logs for backend events and errors
 
 ---
