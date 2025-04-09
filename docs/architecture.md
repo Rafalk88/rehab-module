@@ -65,7 +65,7 @@ The Rehabilitacja Web App is a browser-based system for managing rehabilitation 
 - JWT + RBAC (Role-Based Access Control)
 - Environment secrets managed via `.env` and Vercel Secrets
 - CSRF protection (Next.js default + HTTP-only cookies)
-- Input validation (Zod or custom validators)
+- Input validation (Zod)
 - GDPR-ready data handling
 
 ---
