@@ -2,7 +2,7 @@
 
 ## 📋 Overview
 
-This is a web application designed for rehabilitation clinics and medical offices. It allows staff to manage patient schedules, handle rehabilitation treatments, and assist doctors with visit notes using AI-powered speech-to-text and smart redaction.
+This is a web application designed for rehabilitation clinics and medical offices. It allows staff to manage patient schedules, handle rehabilitation treatments, assist doctors with visit notes using AI-powered speech-to-text and smart redaction, and includes features for document handling and approval processes.
 
 ## 🧰 Tech Stack
 
@@ -21,20 +21,29 @@ This is a web application designed for rehabilitation clinics and medical office
 - Patient schedule management
 - Rehabilitation treatment workflow
 - Daily planned patients
+- Notifications for upcoming appointments and tasks
 
 ### Outpatient Clinic
 - Medical appointments
-- Dictation of visit content (AI)
+- Dictation of visit content (AI-powered speech-to-text)
 - Logical redaction of notes
+- Notifications for pending actions (e.g., medical notes to be reviewed or submitted)
 
 ### Notifications
-- In-app (Web Push)
-- Email notifications
+- In-app notifications (Web Push)
+- Email notifications (via Nodemailer)
 - SMS reminders for patients
+- Automatic email system for document flow and approval
+
+### Document Management & Approval
+- Dynamic document generation (with AI assistance)
+- Automated document workflow for approval (e.g., supervisor/manager review before sending)
+- Role-based access control for document approval
+- Audit trail for document handling
 
 ### Error Handling
 - React Error Boundaries for UI
-- Centralized error logging/monitoring
+- Centralized error logging/monitoring via Sentry
 
 ## 🧪 Testing
 
@@ -63,5 +72,4 @@ Located in the `/docs` folder or project Wiki.
 - API Documentation (Swagger / Postman / Redoc)
 - Database schema (ERD)
 - CI/CD setup and deployment guide
-- Error handling strategy and monitoring
-- Recovery & backup procedures
+- [Permissions System](./docs/permissions.md) - Role-based access control and dynamic permissions
