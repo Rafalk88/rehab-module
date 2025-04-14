@@ -1,6 +1,6 @@
 # 🔐 Permissions System
 
-This document describes the architecture of the permissions system in the `rehabilitacja-projekt` application, following enterprise-level standards.
+This document describes the architecture of the permissions system in the `rehab-module` application, following enterprise-level standards.
 
 ---
 
