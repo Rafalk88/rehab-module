@@ -37,6 +37,8 @@ This is a web application designed for rehabilitation clinics and medical office
 
 ### Document Management & Approval
 - Dynamic document generation (with AI assistance)
+- **Document scanning and OCR**: Users can scan physical documents and upload them to the system. OCR technology will convert the scanned text into an editable format.
+- **AI-powered document processing**: AI will help process and understand the scanned text, extracting key information and transforming it into structured documents (e.g., forms, medical reports).
 - Automated document workflow for approval (e.g., supervisor/manager review before sending)
 - Role-based access control for document approval
 - Audit trail for document handling
