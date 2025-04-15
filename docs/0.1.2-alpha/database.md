@@ -66,7 +66,7 @@ You can view the complete schema in an interactive diagram:
 ## Related Documentation
 
 - [Permissions System](./permissions.md)  
-- [User Configuration Module](./user-configurations.md)  
+- [User Configuration Module](./user-configuration.md)  
 - [Audit Log Details](./audit-log.md)  
 - [Changelog for 0.1.2-alpha](./changelog.md)
 
