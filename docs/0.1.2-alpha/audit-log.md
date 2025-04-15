@@ -26,3 +26,10 @@ Audit logs have been introduced to track all changes and actions performed by us
   "target_id": 123,
   "timestamp": "2025-04-17T10:00:00Z"
 }
+
+For implementation details, check the [Changelog for 0.1.2-alpha](./changelog.md).
+For implementation details, see Changelog for 0.1.2-alpha.
+
+---
+
+> *Note:* Audit logs ensure transparency and accountability for all user actions.
