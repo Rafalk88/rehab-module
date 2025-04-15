@@ -1,4 +1,5 @@
 # Rehabilitacja – Rehabilitation Module Web App
+![doc version](https://img.shields.io/badge/docs-0.1.2--alpha-blue)
 
 ## 📋 Overview
 
@@ -47,6 +48,13 @@ This is a web application designed for rehabilitation clinics and medical office
 - React Error Boundaries for UI
 - Centralized error logging/monitoring via Sentry
 
+## 👥 User Roles
+
+- Administrator
+- Receptionist
+- Rehabilitant (Therapist)
+- Physician
+
 ## 🧪 Testing
 
 - Unit Testing – Vitest
@@ -61,17 +69,31 @@ This is a web application designed for rehabilitation clinics and medical office
 
 ## 🔐 Security
 
-- JWT authentication + role-based access control
+- JWT authentication + RBAC
 - `.env` environment variables with Vercel Secrets
 - CSRF/XSS protection
 - GDPR-compliant data storage
 
-## 📘 Documentation
+## 🗂️ Folder Structure
 
-Located in the `/docs` folder or project Wiki.
+/app # Frontend (Next.js) /api # API Routes or Express backend /prisma # DB schema + seed /docs # Internal documentation /docker # Docker setup .github # GitHub Actions CI/CD
 
-- [Architecture](./docs/architecture.md) (C4 Model)
-- API Documentation (Swagger / Postman / Redoc)
-- Database schema (ERD)
-- CI/CD setup and deployment guide
-- [Permissions System](./docs/permissions.md) - Role-based access control and dynamic permissions
+## 📘 Internal Documentation
+
+Full technical documentation is stored in the `/docs` directory and versioned by release:
+
+- `/docs/architecture.md` – C4 Architecture
+- `/docs/permissions.md` – Roles and permissions system
+- `/docs/database.md` – ERD and schema decisions
+- `/docs/api.md` – API specs
+- `/docs/ci-cd.md` – Deployment and pipelines
+- `/docs/changelog.md` – Version history of documentation
+
+## 📝 Changelog
+
+You can follow the documentation and system changes in the [Changelog](./docs/changelog.md).
+
+---
+
+> **Version:** `0.1.2-alpha`  
+> 📅 Last updated: *2025-04-15*
