@@ -59,7 +59,7 @@ This version includes a refined and expanded schema to support user configuratio
 
 You can view the complete schema in an interactive diagram:
 
-👉 [Open dbdiagram.io ERD](https://dbdiagram.io/d/your-diagram-link)
+👉 [Open dbdiagram.io ERD]([https://dbdiagram.io/d/your-diagram-link](https://dbdiagram.io/d/rehabModule-67fd4aab9cea640381aea3ac))
 
 ---
 
