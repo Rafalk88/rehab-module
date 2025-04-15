@@ -7,7 +7,7 @@
   - Project started for a rehabilitation web application for clinics.
   
 - **Root README:**
-  - Created root `README.md` for the overall project with description, tech stack, and modules.
+  - Created root [README.md](../../README.md) for the overall project with description, tech stack, and modules.
 
 ---
 
