@@ -24,7 +24,7 @@ In this version, the database schema was created with the following key tables a
 - One-to-many relationship between **Users** and **Roles**.
 - One-to-many relationship between **Roles** and **Permissions**.
 
-For more details, see the [Changelog for 0.1.1-alpha](./changelog.md) and [User Configuration Documentation](./user-configurations.md).
+For more details, see the [Changelog for 0.1.1-alpha](./changelog.md) and [Permissions Documentation](./permissions.md).
 
 ---
 
