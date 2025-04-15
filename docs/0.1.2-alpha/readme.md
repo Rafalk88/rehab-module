@@ -21,7 +21,7 @@ You can browse previous versions from the `/docs/` root folder.
 
 The folder `/docs/latest` always reflects the newest stable draft of the documentation. It serves as a symbolic link or a copy of the most recent version of the documentation (currently `0.1.2-alpha`). This makes it easy to access the latest documentation without needing to navigate through different version folders.
 
-To access the latest version of the documentation, visit the [latest documentation folder](./docs/latest/readme.md).
+To access the latest version of the documentation, visit the [latest documentation folder](./latest/readme.md).
 
 ---
 
