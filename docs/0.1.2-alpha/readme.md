@@ -1,25 +1,23 @@
-# 📘 Documentation – Rehabilitacja Web App (v0.1.2-alpha)
+# Documentation – Version 0.1.2-alpha
 
-This documentation version (0.1.2-alpha) contains an updated and expanded technical overview of the Rehabilitacja Web App, including architecture, database schema, user configuration options, and audit logging.
+Welcome to the documentation for version `0.1.2-alpha` of the `rehabModule` system.
 
-## 🔍 Included Documents
+## Available Documents
 
-- [Changelog](./changelog.md) – List of changes in this release.
-- [Architecture](../architecture.md) – System context, container & component diagrams (C4 model).
-- [Database Schema](./database.md) – Tables, relations, and key structures.
-- [User Configurations](./user-configurations.md) – Personal settings and customization per user.
-- [Permissions System](./permissions.md) – Role-based access control and dynamic permissions.
-- [Audit Log](./audit-log.md) – Logging of user actions for compliance and traceability.
+- [Changelog](./changelog.md)  
+- [Database Documentation](./database.md)  
+- [Architecture Overview](./architecture.md)  
+- [Audit Log Module](./audit-log.md)  
+- [User Configuration](./user-configurations.md)  
+- [Permissions System](./permissions.md)
 
-## 📁 Directory Structure
+---
 
-/docs/ ├── 0.1.2-alpha/ │ ├── changelog.md │ ├── database.md │ ├── audit-log.md │ ├── user-configurations.md │ ├── permissions.md │ └── readme.md ├── 0.1.1-alpha/ ├── 0.1.0-alpha/ └── latest → 0.1.2-alpha/
+## Navigation
 
-## 🔗 Quick Links
+You can browse previous versions from the `/docs/` root folder.  
+The folder `/docs/latest` always reflects the newest stable draft of the documentation.
 
-- [Project Root README](../../README.md)
-- [Architecture Diagram](../architecture.md)
-- [Previous Version (0.1.1-alpha)](../0.1.1-alpha/readme.md)
 
 ---
 
