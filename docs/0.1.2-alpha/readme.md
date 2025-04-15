@@ -8,7 +8,7 @@ Welcome to the documentation for version `0.1.2-alpha` of the `rehabModule` syst
 - [Database Documentation](./database.md)  
 - [Architecture Overview](./architecture.md)  
 - [Audit Log Module](./audit-log.md)  
-- [User Configuration](./user-configurations.md)  
+- [User Configuration](./user-configuration.md)  
 - [Permissions System](./permissions.md)
 
 ---
