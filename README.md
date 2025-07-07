@@ -95,7 +95,7 @@ Full technical documentation is stored in the `/docs` directory and versioned by
 
 ## 📝 Changelog
 
-You can follow the documentation and system changes in the [Changelog](./docs/changelog.md).
+You can follow the documentation and system changes in the [Changelog](./docs/).
 
 ---
 
