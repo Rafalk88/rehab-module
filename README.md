@@ -1,5 +1,5 @@
 # Rehabilitacja – Rehabilitation Module Web App
-![doc version](https://img.shields.io/badge/docs-0.1.2--alpha-blue)
+![doc version](https://img.shields.io/badge/docs-0.2.0--alpha-blue)
 
 ## 📋 Overview
 
@@ -78,6 +78,10 @@ This is a web application designed for rehabilitation clinics and medical office
 
 /app # Frontend (Next.js) /api # API Routes or Express backend /prisma # DB schema + seed /docs # Internal documentation /docker # Docker setup .github # GitHub Actions CI/CD
 
+## 📁 Subprojects
+- [Frontend – rehab-frontend](https://github.com/rafalk88/rehab-frontend)
+- [Backend – rehab-backend](https://github.com/rafalk88/rehab-backend)
+
 ## 📘 Internal Documentation
 
 Full technical documentation is stored in the `/docs` directory and versioned by release:
@@ -95,5 +99,5 @@ You can follow the documentation and system changes in the [Changelog](./docs/ch
 
 ---
 
-> **Version:** `0.1.2-alpha`  
-> 📅 Last updated: *2025-04-15*
+> **Version:** `0.2.0-alpha`  
+> 📅 Last updated: *2025-07-07*
