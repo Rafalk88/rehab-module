@@ -1,11 +1,19 @@
-# Latest Documentation - Version 0.1.2-alpha
+# Latest Documentation – Version 0.3.0-alpha
 
-This folder contains the latest version of the documentation for the rehabModule system, reflecting the most current stable draft.
+This folder contains the **latest version** of the documentation for the **Rehabilitation Module Web App**.
 
-For full details, please refer to the [0.2.0-alpha documentation](../0.2.0-alpha/changelog.md).
+For detailed information, see the [0.3.0-alpha changelog](../0.3.0-alpha/changelog.md).
 
-## Changes in this version:
-- Centralized documentation moved to the main `rehab-module` repository  
-- Created separate repositories for `rehab-frontend` and `rehab-backend`  
-- Added links to frontend and backend repositories in the main README  
-- Prepared individual README structures for frontend and backend projects 
+---
+
+## 🔄 Summary of Updates
+
+- Migrated backend to **NestJS (TypeScript, modular architecture)**  
+- Split codebase into separate repositories: `rehab-frontend` and `rehab-backend`  
+- Updated main README to reflect **multi-repo architecture**  
+- Simplified and reorganized documentation structure  
+
+---
+
+📘 **Current documentation version:** `0.3.0-alpha`  
+📅 **Last updated:** 2025-10-11
