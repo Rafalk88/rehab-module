@@ -8,7 +8,7 @@ This is a web application designed for rehabilitation clinics and medical office
 ## 🧰 Tech Stack
 
 - **Frontend:** Next.js
-- **Backend/API:** Next.js API Routes / Express
+- **Backend/API:** Node.js (NestJS-based modular API)
 - **Database:** PostgreSQL + Prisma ORM
 - **Notifications:** Web Push API, Email (Nodemailer), SMS (Twilio)
 - **AI:** Dictation and text processing (Web Speech API)
@@ -57,9 +57,13 @@ This is a web application designed for rehabilitation clinics and medical office
 
 ## 🧪 Testing
 
-- Unit Testing – Vitest
-- Integration Testing – API endpoints
-- E2E Testing – Cypress
+The system includes a comprehensive testing strategy across both frontend and backend:
+
+- **Unit tests** – cover core logic, validation, and UI components
+- **Integration tests** – verify API endpoints, data flow, and module interactions
+- **End-to-End (E2E) tests** – simulate real user flows and critical system scenarios
+
+Each subproject (frontend, backend) defines its own testing framework and configuration.
 
 ## 🚀 CI/CD
 
@@ -74,24 +78,18 @@ This is a web application designed for rehabilitation clinics and medical office
 - CSRF/XSS protection
 - GDPR-compliant data storage
 
-## 🗂️ Folder Structure
-
-/app # Frontend (Next.js) /api # API Routes or Express backend /prisma # DB schema + seed /docs # Internal documentation /docker # Docker setup .github # GitHub Actions CI/CD
-
 ## 📁 Subprojects
 - [Frontend – rehab-frontend](https://github.com/rafalk88/rehab-frontend)
 - [Backend – rehab-backend](https://github.com/rafalk88/rehab-backend)
 
 ## 📘 Internal Documentation
 
-Full technical documentation is stored in the `/docs` directory and versioned by release:
+Full technical documentation is stored in the /docs directory and versioned by release:
 
-- `/docs/architecture.md` – C4 Architecture
-- `/docs/permissions.md` – Roles and permissions system
-- `/docs/database.md` – ERD and schema decisions
-- `/docs/api.md` – API specs
-- `/docs/ci-cd.md` – Deployment and pipelines
-- `/docs/changelog.md` – Version history of documentation
+[/docs/architecture.md](./docs/0.1.2-alpha/architecture.md) – C4 Architecture
+[/docs/permissions.md](./docs/0.1.2-alpha/permissions.md) – Roles and permissions system
+[/docs/database.md](https://github.com/Rafalk88/rehab-backend/blob/main/DATABASE.md) – ERD and schema decisions
+[/docs/changelog.md](./docs/) – Version history of documentation
 
 ## 📝 Changelog
 
@@ -99,5 +97,5 @@ You can follow the documentation and system changes in the [Changelog](./docs/).
 
 ---
 
-> **Version:** `0.2.0-alpha`  
-> 📅 Last updated: *2025-07-07*
+> **Version:** `0.3.0-alpha`  
+> 📅 Last updated: *2025-10-11*
