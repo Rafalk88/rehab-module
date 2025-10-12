@@ -88,7 +88,7 @@ Full technical documentation is stored in the /docs directory and versioned by r
 
 - [/docs/architecture.md](./docs/0.1.2-alpha/architecture.md) – C4 Architecture
 - [/docs/permissions.md](./docs/0.1.2-alpha/permissions.md) – Roles and permissions system
-- [/docs/database.md](https://github.com/Rafalk88/rehab-backend/blob/main/DATABASE.md) – ERD and schema decisions
+- [database.md](https://github.com/Rafalk88/rehab-backend/blob/main/DATABASE.md) – ERD and schema decisions
 - [/docs/changelog.md](./docs/) – Version history of documentation
 
 ## 📝 Changelog
