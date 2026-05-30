@@ -1,6 +1,6 @@
 # Changelog – Version 0.5.0-alpha
 
-**[0.5.0-alpha] – 2026-05-29**
+**[0.5.0-alpha] – 2026-05-30**
 
 ---
 
