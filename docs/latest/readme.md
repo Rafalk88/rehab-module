@@ -1,19 +1,21 @@
-# Latest Documentation – Version 0.3.0-alpha
+# Latest Documentation – Version 0.5.0-alpha
 
 This folder contains the **latest version** of the documentation for the **Rehabilitation Module Web App**.
 
-For detailed information, see the [0.3.0-alpha changelog](../0.3.0-alpha/changelog.md).
+For detailed information, see the [0.5.0-alpha changelog](../0.5.0-alpha/changelog.md).
 
 ---
 
 ## 🔄 Summary of Updates
 
-- Migrated backend to **NestJS (TypeScript, modular architecture)**  
-- Split codebase into separate repositories: `rehab-frontend` and `rehab-backend`  
-- Updated main README to reflect **multi-repo architecture**  
-- Simplified and reorganized documentation structure  
+- Rewrote main README — honest status with implemented vs planned features
+- Added Patient module with encrypted PESEL
+- Updated architecture documentation to reflect NestJS stack
+- Added Decision 015 — Patient data encryption and PESEL handling
+- Updated DATABASE.md with Patient model and PeselStatus enum
+- Updated backend CHANGELOG.md to version 0.7.0
 
 ---
 
-📘 **Current documentation version:** `0.3.0-alpha`  
-📅 **Last updated:** 2025-10-11
+📘 **Current documentation version:** `0.5.0-alpha`  
+📅 **Last updated:** 2026-05-30
