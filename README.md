@@ -1,6 +1,6 @@
 # Rehabilitacja – Rehabilitation Module Web App
 
-![doc version](https://img.shields.io/badge/docs-0.4.0--alpha-blue)
+![doc version](https://img.shields.io/badge/docs-0.5.0--alpha-blue)
 ![status](https://img.shields.io/badge/status-active%20development-green)
 
 ## 📋 Overview
