@@ -1,52 +1,57 @@
 # Rehabilitacja – Rehabilitation Module Web App
-![doc version](https://img.shields.io/badge/docs-0.2.0--alpha-blue)
+
+![doc version](https://img.shields.io/badge/docs-0.4.0--alpha-blue)
+![status](https://img.shields.io/badge/status-active%20development-green)
 
 ## 📋 Overview
 
-This is a web application designed for rehabilitation clinics and medical offices. It allows staff to manage patient schedules, handle rehabilitation treatments, assist doctors with visit notes using AI-powered speech-to-text and smart redaction, and includes features for document handling and approval processes.
+A web application designed for rehabilitation clinics and medical offices. Built to support staff in managing patients, rehabilitation workflows, and clinical documentation — with a focus on **minimum clicks, maximum value**.
+
+The system is inspired by real clinical workflows observed in a rehabilitation department, with domain knowledge embedded into architecture decisions.
+
+> ⚠️ This project is in active development. Features marked as **[planned]** are not yet implemented.
+
+---
 
 ## 🧰 Tech Stack
 
-- **Frontend:** Next.js
-- **Backend/API:** Node.js (NestJS-based modular API)
+### Implemented
+- **Frontend:** Next.js, React, Ant Design, TypeScript
+- **Backend:** NestJS (modular architecture), TypeScript
 - **Database:** PostgreSQL + Prisma ORM
-- **Notifications:** Web Push API, Email (Nodemailer), SMS (Twilio)
-- **AI:** Dictation and text processing (Web Speech API)
-- **CI/CD:** Docker + GitHub Actions + Vercel
-- **Error Monitoring:** Sentry
-- **Error Handling:** React Error Boundaries
+- **Auth:** JWT (access + refresh tokens), RBAC with permission overrides
+- **Security:** AES-256-GCM encryption, HMAC search index, key versioning
+- **Validation:** Zod schemas
+- **Logging:** Winston
+- **Testing:** Jest (unit + integration), ~71% coverage
+- **Dev tools:** Docker, Husky, ESLint, Prettier
+
+### Planned
+- Notifications: Web Push, Email, SMS
+- AI: Speech-to-text dictation for visit notes
+- CI/CD: GitHub Actions + deployment pipeline
+- Error monitoring: Sentry
+
+---
 
 ## 🧩 App Modules
 
-### Cabinet
-- Patient schedule management
-- Rehabilitation treatment workflow
-- Daily planned patients
-- Notifications for upcoming appointments and tasks
+### ✅ Implemented
+- **Authentication** — login, logout, refresh token, password management
+- **Authorization** — RBAC with per-user permission overrides
+- **Patients** — encrypted PESEL storage, paginated list, create patient
+- **Audit** — automatic operation logging for all CRUD operations
 
-### Outpatient Clinic
-- Medical appointments
-- Dictation of visit content (AI-powered speech-to-text)
-- Logical redaction of notes
-- Notifications for pending actions (e.g., medical notes to be reviewed or submitted)
+### 🔄 In Progress
+- **Cabinet** — patient schedule, rehabilitation workflow
 
-### Notifications
-- In-app notifications (Web Push)
-- Email notifications (via Nodemailer)
-- SMS reminders for patients
-- Automatic email system for document flow and approval
+### 📋 Planned
+- **Outpatient Clinic** — medical appointments, AI dictation
+- **Notifications** — in-app, email, SMS
+- **Document Management** — generation, scanning, approval workflow
+- **Statistics & Billing**
 
-### Document Management & Approval
-- Dynamic document generation (with AI assistance)
-- **Document scanning and OCR**: Users can scan physical documents and upload them to the system. OCR technology will convert the scanned text into an editable format.
-- **AI-powered document processing**: AI will help process and understand the scanned text, extracting key information and transforming it into structured documents (e.g., forms, medical reports).
-- Automated document workflow for approval (e.g., supervisor/manager review before sending)
-- Role-based access control for document approval
-- Audit trail for document handling
-
-### Error Handling
-- React Error Boundaries for UI
-- Centralized error logging/monitoring via Sentry
+---
 
 ## 👥 User Roles
 
@@ -55,47 +60,47 @@ This is a web application designed for rehabilitation clinics and medical office
 - Rehabilitant (Therapist)
 - Physician
 
-## 🧪 Testing
+---
 
-The system includes a comprehensive testing strategy across both frontend and backend:
+## 🔐 Security Highlights
 
-- **Unit tests** – cover core logic, validation, and UI components
-- **Integration tests** – verify API endpoints, data flow, and module interactions
-- **End-to-End (E2E) tests** – simulate real user flows and critical system scenarios
-
-Each subproject (frontend, backend) defines its own testing framework and configuration.
-
-## 🚀 CI/CD
-
-- GitHub Actions for testing and linting
-- Dockerized development and production environments
-- Automatic deployment via Vercel
-
-## 🔐 Security
-
-- JWT authentication + RBAC
-- `.env` environment variables with Vercel Secrets
-- CSRF/XSS protection
-- GDPR-compliant data storage
-
-## 📁 Subprojects
-- [Frontend – rehab-frontend](https://github.com/rafalk88/rehab-frontend)
-- [Backend – rehab-backend](https://github.com/rafalk88/rehab-backend)
-
-## 📘 Internal Documentation
-
-Full technical documentation is stored in the /docs directory and versioned by release:
-
-- [/docs/architecture.md](./docs/0.1.2-alpha/architecture.md) – C4 Architecture
-- [/docs/permissions.md](./docs/0.1.2-alpha/permissions.md) – Roles and permissions system
-- [database.md](https://github.com/Rafalk88/rehab-backend/blob/main/DATABASE.md) – ERD and schema decisions
-- [/docs/changelog.md](./docs/) – Version history of documentation
-
-## 📝 Changelog
-
-You can follow the documentation and system changes in the [Changelog](./docs/).
+- JWT authentication with access (15m) + refresh (7d) tokens
+- Refresh token rotation and blacklist on logout
+- AES-256-GCM encryption for sensitive fields (PESEL, login, email)
+- HMAC-based search index for encrypted fields
+- Key versioning for future key rotation
+- RBAC with explicit per-user permission overrides
+- Automatic audit logging with sensitive field redaction (`[REDACTED]`)
+- Rate limiting, Helmet, CORS
+- GDPR-aware data retention policies
 
 ---
 
-> **Version:** `0.3.0-alpha`  
-> 📅 Last updated: *2025-10-11*
+## 🧪 Testing
+
+- Unit tests for business logic, validation, guards
+- Integration tests for API endpoints
+- Pre-commit hooks via Husky
+- Current coverage: ~71%
+
+---
+
+## 📁 Subprojects
+
+- [Frontend – rehab-frontend](https://github.com/rafalk88/rehab-frontend)
+- [Backend – rehab-backend](https://github.com/rafalk88/rehab-backend)
+
+---
+
+## 📘 Documentation
+
+- [Architecture](./docs/0.1.2-alpha/architecture.md) – C4 Architecture overview
+- [Permissions](./docs/0.1.2-alpha/permissions.md) – Roles and permissions system
+- [Database](https://github.com/Rafalk88/rehab-backend/blob/main/DATABASE.md) – Schema and model decisions
+- [Technical Decisions](https://github.com/Rafalk88/rehab-backend/blob/main/DECISIONS.md) – Architecture decision records
+- [Changelog](./docs/) – Version history
+
+---
+
+> **Version:** `0.4.0-alpha`  
+> 📅 Last updated: *2026-05-30*
