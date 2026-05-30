@@ -97,7 +97,7 @@ The system is inspired by real clinical workflows observed in a rehabilitation d
 - [Architecture](./docs/0.5.0-alpha/architecture.md) – C4 Architecture overview
 - [Permissions](./docs/0.1.2-alpha/permissions.md) – Roles and permissions system
 - [Database](https://github.com/Rafalk88/rehab-backend/blob/main/DATABASE.md) – Schema and model decisions
-- [Technical Decisions](https://github.com/Rafalk88/rehab-backend/blob/main/DECISIONS.md) – Architecture decision records
+- [Technical Decisions](https://github.com/Rafalk88/rehab-backend/blob/main/DECISSIONS.md) – Architecture decision records
 - [Changelog](./docs/) – Version history
 
 ---
