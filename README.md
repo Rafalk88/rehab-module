@@ -102,5 +102,5 @@ The system is inspired by real clinical workflows observed in a rehabilitation d
 
 ---
 
-> **Version:** `0.4.0-alpha`  
+> **Version:** `0.5.0-alpha`  
 > 📅 Last updated: *2026-05-30*
