@@ -1,6 +1,6 @@
 # Rehabilitacja – Rehabilitation Module Web App
 
-![doc version](https://img.shields.io/badge/docs-0.5.0--alpha-blue)
+![doc version](https://img.shields.io/badge/docs-0.6.0--alpha-blue)
 ![status](https://img.shields.io/badge/status-active%20development-green)
 
 ## 📋 Overview
@@ -39,11 +39,13 @@ The system is inspired by real clinical workflows observed in a rehabilitation d
 ### ✅ Implemented
 - **Authentication** — login, logout, refresh token, password management
 - **Authorization** — RBAC with per-user permission overrides
+- **Cabinet** — visit list with status filtering, date range, EWUŚ and billing indicators, status change
 - **Patients** — encrypted PESEL storage, paginated list, create patient
 - **Audit** — automatic operation logging for all CRUD operations
+- **Visits** — create, status management, date tracking (planned/register/completion)
 
 ### 🔄 In Progress
-- **Cabinet** — patient schedule, rehabilitation workflow
+-
 
 ### 📋 Planned
 - **Outpatient Clinic** — medical appointments, AI dictation
@@ -102,5 +104,5 @@ The system is inspired by real clinical workflows observed in a rehabilitation d
 
 ---
 
-> **Version:** `0.5.0-alpha`  
-> 📅 Last updated: *2026-05-30*
+> **Version:** `0.6.0-alpha`  
+> 📅 Last updated: *2026-06-18*
