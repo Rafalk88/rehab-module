@@ -102,6 +102,17 @@ The system is inspired by real clinical workflows observed in a rehabilitation d
 - [Technical Decisions](https://github.com/Rafalk88/rehab-backend/blob/main/DECISSIONS.md) – Architecture decision records
 - [Changelog](./docs/) – Version history
 
+Documentation is versioned independently per area.
+A document's version refers to the application version in which it was last changed.
+
+| Document | Version | Last updated | Repository |
+|---|---|---|---|
+| [Architecture (C4)](docs/0.5.0-alpha/architecture.md) | 0.5.0-alpha | YYYY-MM-DD | rehab-module |
+| [Permissions](docs/0.1.2-alpha/permissions.md) | 0.1.2-alpha | YYYY-MM-DD | rehab-module |
+| [Database](link-to-DATABASE.md) | — | YYYY-MM-DD | rehab-backend |
+| [Technical decisions](link-to-DECISIONS.md) | — | YYYY-MM-DD | rehab-backend |
+| [Changelog](link-to-CHANGELOG-file) | — | — | — |
+
 ---
 
 > **Version:** `0.6.0-alpha`  
